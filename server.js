@@ -45,6 +45,12 @@ app.get('/about', (req, res) => {
     });  
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs',{
+        pagetitle: 'Projects Page',
+    });  
+});
+
 app.listen(port, () => {
     console.log(`Congratulations, your app is in running mode on port ${port}`);
 });
